@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">
+        <span data-text="clash of">clash of</span>
+        <span data-text="cards">cards</span>
+      </h1>
+      <div class="game-container">
+        <div class="player" id="player1">
+          <h2>Player 1</h2>
+          <ul id="player1-hand" class="hand"> </ul>
+        </div>
+        <div class="player" id="player2">
+          <h2>Player 2</h2>
+          <ul id="player2-hand" class="hand"> </ul>
+        </div>
+      </div>
+      <div id="result" class="result"></div>
+      <button class="game-btn" id="startGame">Start Game</button>
+    </div>
+    <script src="cardGame.js"></script>
+    <script src="tests.js"></script>
+  </body>
+</html>

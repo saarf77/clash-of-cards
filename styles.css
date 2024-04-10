@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #264653;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.player {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  border: 1px solid black;
+}
+
+.hand {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hand li {
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 50px;
+  font-size: 24px;
+  padding: 40px;
+  font-weight: bold;
+  background-color: #f1faee;
+  border-radius: 5px;
+}
+
+.winner {
+  background-color: #e76f51;
+  transition: 300ms;
+}
+
+.loser {
+  transition: 300ms;
+  background-color: #2a9d8f;
+}
+.game-btn {
+  margin-top: 20px;
+}
+
+.game-btn {
+  margin: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #e76f51 0%, #f09819 51%, #e76f51 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.game-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.game-btn:active {
+  transform: scale(0.95);
+}
+
+.main-title {
+  transform: skew(0, -10deg);
+  order: 2;
+  color: #f1faee;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #e76f51, 2px 2px 1px #2a9d8f, 4px 2px 1px #e76f51, 3px 3px 1px #2a9d8f, 5px 3px 1px #e76f51,
+    4px 4px 1px #2a9d8f, 6px 4px 1px #e76f51, 5px 5px 1px #2a9d8f, 7px 5px 1px #e76f51, 6px 6px 1px #2a9d8f,
+    8px 6px 1px #e76f51, 7px 7px 1px #2a9d8f, 9px 7px 1px #e76f51;
+
+  span {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      text-shadow: 2px 2px 1px #e76f51, -1px -1px 1px #2a9d8f, -2px 2px 1px #e76f51, 1px -1px 1px #2a9d8f;
+      z-index: 1;
+    }
+
+    &:nth-child(1) {
+      padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2.25rem;
+    }
+  }
+}
