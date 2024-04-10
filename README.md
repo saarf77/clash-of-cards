@@ -1,3 +1,5 @@
+https://saarf77.github.io/clash-of-cards/
+
 To run the card game program, you'll need to host it on a local server.
 
 You can use tools like Live Server for Visual Studio Code. Right click on `index.html` and choose "open with live
@@ -19,3 +21,4 @@ Open console in the browser to see the tests (before you run the game, or after 
 Press the Start Game button to start the card game
 
 you can see in the console all the rounds, result of the round, number of cards left, and winner of the game.
+![image](https://github.com/saarf77/clash-of-cards/assets/64427190/8f3c7b37-5a20-4279-8bc9-5bec59914af4)
